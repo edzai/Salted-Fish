@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>咸鱼</title>
+
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="assets/css/font-electro.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="assets/css/colors/yellow.css" media="all" />
+
+        <!-- Demo Purpose Only. Should be removed in production -->
+        <link rel="stylesheet" href="assets/css/config.css">
+        <link href="assets/css/colors/green.css" rel="alternate stylesheet" title="Green color">
+        <link href="assets/css/colors/pink.css" rel="alternate stylesheet" title="Pink color">
+        <link href="assets/css/colors/blue.css" rel="alternate stylesheet" title="Blue color">
+        <link href="assets/css/colors/red.css" rel="alternate stylesheet" title="Red color">
+        <link href="assets/css/colors/orange.css" rel="alternate stylesheet" title="Orange color">
+        <link href="assets/css/colors/black.css" rel="alternate stylesheet" title="Black color">
+        <link href="assets/css/colors/gold.css" rel="alternate stylesheet" title="Gold color">
+        <link href="assets/css/colors/yellow.css" rel="alternate stylesheet" title="Yellow color">
+        <link href="assets/css/colors/flat-blue.css" rel="alternate stylesheet" title="Flat Blue color">
+
+        <link rel="shortcut icon" href="assets/images/fav-icon.png">
+		<link rel="stylesheet" href="assets/css/eh_home.css">
+		<link href="assets/css/eh_index.css" rel="stylesheet">
+		<style>
+			#savings-text{
+				font-size: 14px;
+			}
+			.ec-user:before {
+				content: "\72";
+			}
+
+            .midBox{
+                display: none;
+            }
+            .midBoxShow{
+                display: block;!important;
+            }
+            .hideBox{
+                display: none;
+            }
+            .showBox{
+                display: block;
+            }
+
+            li{
+			    text-align :center;
+			    padding-bottom:auto;
+			}
+		</style>
+
+		<!-- ------------------------------------------导航栏 ------------------------------------------ -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="assets/css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="assets/css/styles.css"> <!-- Resource style -->
+		<script src="assets/js/daohang/modernizr.js"></script> <!-- Modernizr -->
+	</head>
+
+    <body class="page home page-template-default">
+
+
+    	<div id="cd-nav">
+			<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+			<nav id="cd-main-nav">
+				<ul>
+					<li><a href="normal-index.html">首页</a></li>
+					<li><a href="#0">个人</a></li>
+					<li><a href="chat.html">聊天</a></li>
+					<li><a href="issuedProduct.html">发布</a></li>
+					<li><a href="setting.html">设置</a></li>
+					<li><a href="#0">客服</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+
+	        <div id="page" class="hfeed site">
+
+
+	            <header id="masthead" class="site-header header-v1">
+				    <div class="container">
+				        <div class="row">
+
+	         
+								<div class="top-bar"></div><!-- /.top-bar -->
+
+
+								<!-- ============================logo 结束搜索框搜索分类开始===========================-->
+
+			            		<form class="navbar-search" method="get" action="/">
+									<label class="sr-only screen-reader-text" for="search">Search for:</label>
+									<div class="input-group">
+										<input type="text" id="search" class="form-control search-field" dir="ltr" value="" name="s" placeholder="搜索~" />
+										<div class="input-group-addon search-categories">
+											<select name='product_cat' id='product_cat' class='postform resizeselect' >
+												<option value='0' selected='selected'>所有分类</option>
+												<option value='1' selected='selected'>学习</option>
+
+											</select>
+										</div>
+										<div class="input-group-btn">
+											<input type="hidden" id="search-param" name="post_type" value="product" />
+											<button type="submit" class="btn btn-secondary"><i class="ec ec-search"></i></button>
+										</div>
+									</div>
+								</form>
+
+								<!-- ============================================================= 搜索结束 我的订单开始============================================================= -->
+			            
+					            <ul class="navbar-mini-cart navbar-nav animate-dropdown nav pull-right flip" style="margin-left: 3em;">
+									<li class="nav-item dropdown">
+										<a href="javascript:void(0);" class="nav-link cartLink" data-toggle="dropdown" title="购物车">
+											<i class="ec ec-shopping-bag"></i>
+											<span class="cart-items-count count" id="cartSize">0</span>
+											<span class="cart-items-total-price total-price"><span class="amount cartTotal" ></span></span>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-mini-cart">
+											<li>
+												<div class="widget_shopping_cart_content">
+													<ul class="cart_list product_list_widget " id="indexCart">
+														<P class="cartTitle">您的购物车还是空的哦~~</P>
+													</ul><!-- end product list -->
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+
+								<ul class="navbar-wishlist nav navbar-nav pull-right flip">
+									<li class="nav-item">
+										<a href="#" class="nav-link" title="我的收藏"><i class="ec ec-favorites"></i></a>
+									</li>
+								</ul>
+
+		        			</div><!-- /.row -->
+
+		        			<div class="row" style="position:relative;z-index:0">
+						        <div class="col-xs-12 col-lg-3">
+						        	<nav>
+										<ul class="list-group vertical-menu yamm make-absolute" id="productRank">
+											<li class="list-group-item list-per" ><span><i class="fa fa-list-ul"></i>所有分类</span></li>
+											<!--分类代码-->
+										</ul>
+									</nav>
+			        			</div>
+			        		<div class="col-xs-12 col-lg-9">
+		            		
+		            		<nav>
+								<ul id="menu-secondary-nav" class="secondary-nav">
+									<li class="menu-item"><a href="home-v3-full-color.html">互帮互助</a></li>
+									<li class="menu-item"><a href="blog-v1.html">闲置二手</a></li>
+								</ul>
+							</nav>
+			            </div>
+			        </div>
+			    </div>
+			</header>
+
+	        <div id="content" class="site-content" tabindex="-1">
+			    <div class="container">
+			        <div id="primary" class="content-area">
+			            <main id="main" class="site-main">
+							
+							<br><br>
+							<h2 class="h2" style="text-align:center;">热门内容</h2>
+							<br>
+
+			                <div class="home-v1-slider" >
+	<!-- ========================================== 网页轮播图 ========================================= -->
+								<div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm" style="position:relative;z-index:0">
+
+	<!-- ========================================== 第一张 ========================================= -->
+									<div class="item" id="item-1" style="background-image: url(assets/images/slider/banner-2.png);">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-offset-3 col-md-5">
+													<div class="caption vertical-center text-left">
+														<div class="hero-2 fadeInDown-2">需求：抓一只皮卡丘</div>
+														<div class="hero-v2-price fadeInDown-3"><span>报酬：￥0.5</span>以下</div>
+														<div class="hero-action-btn fadeInDown-4">
+															<a href="#" class="big le-button ">接单</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									
+	<!-- ========================================== 第二张 ========================================= -->
+									<div class="item" id="item-3" style="background-image: url(assets/images/slider/banner-1.jpg);">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-offset-3 col-md-5">
+													<div class="caption vertical-center text-left">
+														<div class="hero-2 fadeInDown-2">把这只皮卡丘放掉</div>
+														<div class="hero-v2-price fadeInDown-3"><span>报酬：￥10000</span>起</div>
+														<div class="hero-action-btn fadeInDown-3">
+															<a href="#" class="big le-button ">接单</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+	<!-- ========================================= 轮播结束 ========================================= -->
+
+
+
+
+
+	<section class="products-2-1-2 animate-in-view fadeIn animated" data-animation="fadeIn">
+		<h2 class="sr-only">Products Grid</h2>
+		<div class="container">
+
+
+			<ul class="nav nav-inline nav-justified" id="productTypeClass" style="overflow:hidden;"></ul>
+
+			<div class="midBoxShow columns-2-1-2 midBox " id="columns-1" >
+				<ul class="products exclude-auto-height">
+					<li class="product">
+						<div class="product-outer">
+							<div class="product-inner">
+								<span class="loop-product-categories"><a href="product-category.html" rel="tag">互帮互助 | 帮拿外卖</a></span>
+								<a href="#">
+									<h3>时限：13：00前 | 外卖内容：红烧皮卡丘</h3>
+									<div class="product-thumbnail">
+										<img src="assets/images/blank.gif" data-echo="assets/images/products/1.jpg" class="img-responsive" alt="">
+									</div>
+								</a>
+
+								<div class="price-add-to-cart">
+									<span class="price">
+										<span class="electro-price">
+											<ins><span class="amount">￥20.00</span></ins>
+										</span>
+									</span>
+									<a rel="nofollow" href="#" class="button add_to_cart_button">添加到购物车</a>
+								</div><!-- /.price-add-to-cart -->
+
+								<div class="hover-area">
+									<div class="action-buttons">
+										<a href="#" rel="nofollow" class="add_to_wishlist">收藏</a>
+									</div>
+								</div>
+							</div><!-- /.product-inner -->
+						</div><!-- /.product-outer -->
+					</li>
+					
+					<li class="product">
+						<div class="product-outer">
+							<div class="product-inner">
+								<span class="loop-product-categories"><a href="product-category.html" rel="tag">闲置二手 | 书籍</a></span>
+								<a href="#">
+	                                <h3>《如何抓到皮卡丘》</h3>
+									<div class="product-thumbnail">
+	                                    <img src="assets/images/blank.gif" data-echo="assets/images/products/2.jpg" class="img-responsive" alt="">
+									</div>
+								</a>
+
+								<div class="price-add-to-cart">
+									<span class="price">
+										<span class="electro-price">
+											<ins><span class="amount">￥0.99</span></ins>
+											<del><span class="amount">￥9,999.00</span></del>
+										</span>
+									</span>
+									<a rel="nofollow" href="#" class="button add_to_cart_button">添加到购物车</a>
+								</div><!-- /.price-add-to-cart -->
+
+								<div class="hover-area">
+									<div class="action-buttons">
+										<a href="#" rel="nofollow" class="add_to_wishlist">收藏</a>
+									</div>
+								</div>
+							</div><!-- /.product-inner -->
+						</div><!-- /.product-outer -->
+					</li>
+				</ul>
+			
+			</div>
+
+		</div>
+	</section>
+
+	<section class="home-v1-recently-viewed-products-carousel section-products-carousel animate-in-view fadeIn animated" data-animation="fadeIn">
+
+		<header>
+			<h2 class="h1">最新发布</h2>
+			<div class="owl-nav">
+				<a href="#products-carousel-prev" data-target="#recently-added-products-carousel" class="slider-prev"><i class="fa fa-angle-left"></i></a>
+				<a href="#products-carousel-next" data-target="#recently-added-products-carousel" class="slider-next"><i class="fa fa-angle-right"></i></a>
+			</div>
+		</header>
+
+		<div id="recently-added-products-carousel">
+			<div class="woocommerce columns-6">
+				<div class="products owl-carousel recently-added-products products-carousel columns-6">
+
+					<div class="product">
+						<div class="product-outer">
+						    <div class="product-inner">
+						        <span class="loop-product-categories"><a href="product-category.html" rel="tag">闲置二手 | 手机</a></span>
+						        <a href="#">
+						            <h3>能砸晕皮卡丘的手机</h3>
+						            <div class="product-thumbnail">
+						                <img src="assets/images/blank.gif" data-echo="assets/images/product-category/1.jpg" class="img-responsive" alt="">
+						            </div>
+						        </a>
+
+						        <div class="price-add-to-cart">
+						            <span class="price">
+						                <span class="electro-price">
+						                    <ins><span class="amount">￥9,999.00</span></ins>
+						                    <del><span class="amount">￥1.00</span></del>
+						                    <span class="amount"> </span>
+						                </span>
+						            </span>
+						            <a rel="nofollow" href="#" class="button add_to_cart_button">添加购物车</a>
+						        </div><!-- /.price-add-to-cart -->
+
+						        <div class="hover-area">
+						            <div class="action-buttons">
+						                <a href="#" rel="nofollow" class="add_to_wishlist">收藏</a>
+						            </div>
+						        </div>
+						    </div><!-- /.product-inner -->
+						</div><!-- /.product-outer -->
+					</div><!-- /.products -->
+
+
+	                <div class="product">
+	                    <div class="product-outer">
+	                        <div class="product-inner">
+	                            <span class="loop-product-categories"><a href="product-category.html" rel="tag">互帮互助 | 帮拿外卖</a></span>
+	                            <a href="#">
+	                                <h3>时限：13：00前 | 外卖内容：红烧皮卡丘</h3>
+	                                <div class="product-thumbnail">
+	                                    <img src="assets/images/blank.gif" data-echo="assets/images/product-category/2.jpg" class="img-responsive" alt="">
+	                                </div>
+	                            </a>
+
+		                        <div class="price-add-to-cart">
+						            <span class="price">
+						                <span class="electro-price">
+						                    <ins><span class="amount">￥20.00</span></ins>
+		                                    <span class="amount"> </span>
+						                </span>
+						            </span>
+		                            <a rel="nofollow" href="#" class="button add_to_cart_button">添加购物车</a>
+		                        </div><!-- /.price-add-to-cart -->
+
+	                            <div class="hover-area">
+	                                <div class="action-buttons">
+	                                    <a href="#" rel="nofollow" class="add_to_wishlist">收藏</a>
+	                                </div>
+	                            </div>
+	                        </div><!-- /.product-inner -->
+	                    </div><!-- /.product-outer -->
+	                </div><!-- /.products -->
+				
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	            </main><!-- #main -->
+	        </div><!-- #primary -->
+
+	    </div><!-- .container -->
+	</div><!-- #content -->
+
+	        </div><!-- #page -->
+
+	       
+
+	    <script src="assets/js/daohang/jquery-2.1.0.min.js"></script>
+		<script src="assets/js/daohang/main.js"></script> <!-- Resource jQuery -->
+
+
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/tether.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+        <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="assets/js/echo.min.js"></script>
+        <script type="text/javascript" src="assets/js/wow.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="assets/js/electro.js"></script>
+
+        <!-- For demo purposes – can be removed on production -->
+
+        <script type="text/javascript" src="switchstylesheet/switchstylesheet.js"></script>
+		<script type="text/javascript" src="assets/js/eh_home.js"></script>
+		<script type="text/javascript" src="assets/js/Var.js"></script>
+		<script type="text/javascript" src="assets/js/eh_index.js"></script>
+		<script type="text/javascript" src="assets/js/layer/2.4/layer.js"></script>
+
+       
+    </body>
+</html>

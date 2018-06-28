@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>咸鱼</title>
+
+    <!-- ------------------------------------------导航栏 ------------------------------------------ -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Resource style -->
+    <script src="assets/js/daohang/modernizr.js"></script> <!-- Modernizr -->
+    <!-- ------------------------------------------导航栏完------------------------------------------ -->
+
+
+    <script>
+       window.onload = function(){
+           isloginWhere();
+       }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-electro.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/yellow.css" media="all" />
+
+    <link rel="stylesheet" href="assets/css/config.css">
+    <link rel="stylesheet" href="assets/js/webuploader/0.1.5/webuploader.css">
+    <link rel="stylesheet" href="assets/js/layui/css/layui.css">
+    <link href="assets/css/colors/green.css" rel="alternate stylesheet" title="Green color">
+    <link href="assets/css/colors/pink.css" rel="alternate stylesheet" title="Pink color">
+    <link href="assets/css/colors/blue.css" rel="alternate stylesheet" title="Blue color">
+    <link href="assets/css/colors/red.css" rel="alternate stylesheet" title="Red color">
+    <link href="assets/css/colors/orange.css" rel="alternate stylesheet" title="Orange color">
+    <link href="assets/css/colors/black.css" rel="alternate stylesheet" title="Black color">
+    <link href="assets/css/colors/gold.css" rel="alternate stylesheet" title="Gold color">
+    <link href="assets/css/colors/yellow.css" rel="alternate stylesheet" title="Yellow color">
+    <link href="assets/css/colors/flat-blue.css" rel="alternate stylesheet" title="Flat Blue color">
+
+    <link rel="shortcut icon" href="assets/images/fav-icon.png">
+    <link rel="stylesheet" href="assets/css/eh_home.css">
+    <style>
+
+        .uploadBtn{
+
+
+        }
+        .form-title{
+            width: 350px;
+            font-weight: normal;
+            color: orange;
+            text-align: right;
+            display: block;
+            float: right;
+        }
+
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none !important;
+            margin: 0;
+        }
+        input[type="number"]{
+            -moz-appearance: textfield;
+        }
+
+        .menu-item-xiala li{
+            list-style: none;
+            color: #333;
+            font-size: 14px;
+            margin-left: 0px;
+            width: 90px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            border-bottom: 1px solid #F2F2F2;
+        }
+        .div-box{
+            width: 100%;
+        }
+        li{
+                text-align :center;
+                padding-bottom:auto;
+            }
+
+    </style>
+
+
+
+
+</head>
+
+<body class="page home page-template-default">
+
+    <div id="cd-nav">
+        <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+        <nav id="cd-main-nav">
+            <ul>
+                <li><a href="normal-index.html">首页</a></li>
+                <li><a href="#0">个人</a></li>
+                <li><a href="chat.html">聊天</a></li>
+                <li><a href="issuedProduct.html">发布</a></li>
+                <li><a href="setting.html">设置</a></li>
+                <li><a href="#0">客服</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+<div id="page" class="hfeed site">
+    <div class="top-bar" style="width: 350px;">
+        <div class="container">
+           
+        </div>
+    </div>
+
+
+    <div id="content" class="site-content" tabindex="-1">
+        <div class="container">
+
+
+            <div id="primary" class="content-area">
+                <main id="main" class="site-main">
+                    <article id="post-8" class="hentry">
+
+                        <div class="entry-content">
+                            <div class="woocommerce">
+                                <div class="customer-login-form"  style="width: 330px;">
+                                    <div class="col2-set" id="customer_login">
+
+                                        <div class="col-1" style="margin: 0px auto;">
+
+
+                                            <h2>发布</h2>
+
+                                            <form  class="layui-form" id="myform">
+
+                                            
+
+                                                <p class="form-row form-row-wide">
+                                                    <label for="productName">名称
+                                                        <span class="required">*</span><span class="form-title"></span></label>
+                                                    <input type="text" class="input-text" name="productName" id="productName" value="" placeholder="尽可能详细" style="width: 330px;"  />
+                                                </p>
+
+
+                                                <p>
+                                                   
+                                                    <label for="rank-1">类别
+                                                        <span class="required">*</span><span class="form-title"></span>
+                                                    </label>
+
+                                                    <div class="layui-inline">
+                                                        <div class="layui-input-inline " style="width: 330px;">
+                                                            <select  lay-verify="required" lay-search="" lay-filter="rank-1" id="rank-1">
+                                                                <option value="">直接选择或搜索选择</option>
+                                                                <option value="">互帮互助</option>
+                                                                <option value="">闲置二手</option>
+                                                            </select>
+                                                        </div>
+                                               
+
+                                                        <!--二级类 -->
+                                                        <div class="layui-inline" >
+                                                            <div class="layui-input-inline layui-form" style="width: 330px;display: none;"  lay-filter="rank-2-box">
+                                                                <select  lay-verify="required" lay-search="" lay-filter="rank-2" id="rank-2">
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <br><br>
+                                                </p>
+
+                                                <p>
+                                                    <label for="rank-1">标签
+                                                        <span class="required">*</span><span class="form-title"></span>
+                                                    </label>
+
+                                                    <div class="layui-inline" >
+                                                        <div class="layui-input-inline " style="width: 330px;">
+                                                            <select  lay-verify="required" lay-search="" lay-filter="rank-1" id="rank-1">
+                                                                <option value="">直接选择或搜索选择</option>
+                                                            </select>
+                                                        </div>
+                                               
+
+                                                        <!--二级类 -->
+                                                        <div class="layui-inline" ></div>
+
+                                                    </div>
+
+                                                    <br><br>
+                                                </p>
+
+                                                
+
+                                                <p class="form-row form-row-wide" style="width: 330px;">
+                                                    <label for="productPrice">价格
+                                                        <span class="required">*</span>
+                                                        <span class="form-title"></span>
+                                                    </label>
+                                                    <input type="number" class="input-text" name="productPrice" value="" style="color: red;font-weight: bold;" placeholder="￥" id="productPrice"  onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" />
+
+                                                    <br><br>
+                                                </p>
+
+                                                <div class="formControls col-xs-8 col-sm-9" style="width: 330px;">
+                                                    <div class="uploader-list-container" >
+                                                        <div class="queueList">
+                                                            <div id="dndArea" class="placeholder">
+                                                                <div id="filePicker-2"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="statusBar" style="display:none;">
+                                                    <div class="progress"><span class="text">0%</span> <span class="percentage"></span></div>
+                                                    <div class="info"></div>
+                                                    <div class="btns">
+                                                        <div id="filePicker2"></div>
+                                                        <div style="display: none" class="uploadBtn">开始上传</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <br><br>
+
+                                        </div>
+
+
+
+                                        <p class="form-row form-row-wide">
+                                            <label for="productIntroduce">介绍
+                                                <span class="required">*</span>
+                                                <span class="form-title"></span>
+                                            </label>
+                                            <textarea name="productIntroduce" id="productIntroduce" style="height: 180px;width:330px; padding: 15px;line-height:1.5;text-indent:2em;"></textarea>
+                                        </p>
+                                        <p class="form-row">
+                                            <input class="button" type="submit" value="发布" id="issue">
+                                        </p>
+
+                                    </form>
+
+
+                                </div><!-- .col-1 -->
+
+                                    </div><!-- .col2-set -->
+
+                                </div><!-- /.customer-login-form -->
+                            </div><!-- .woocommerce -->
+                        </div><!-- .entry-content -->
+
+                    </article><!-- #post-## -->
+
+                </main><!-- #main -->
+            </div><!-- #primary -->
+
+
+        </div><!-- .col-full -->
+    </div><!-- #content -->
+
+</div>
+
+<script src="assets/js/daohang/jquery-2.1.0.min.js"></script>
+<script src="assets/js/daohang/main.js"></script> <!-- Resource jQuery -->
+
+
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script src="assets/js/webuploader/0.1.5/webuploader.min.js"></script>
+<script src="assets/js/layui/layui.js"></script>
+<script src="assets/js/uploaderImg.js"></script>
+<script src="assets/js/layer/2.4/layer.js"></script>
+<script src="assets/js/eh_home.js"></script>
+<script src="assets/js/Var.js"></script>
+
+<script>
+
+    $(function () {
+        load_1_Rank();
+
+
+            $("#issue").click(function () {
+                $('.uploadBtn').click();
+            var productType;
+            var notQuiState=$("#notQuite").is(':checked');
+
+            if ($("#productName").val() == null || $("#productName").val().trim().length == 0){
+                layer.msg("没有输入名称");
+                return false;
+            }else {
+                if ($("#productName").val().length < 2){
+                    layer.msg("名称过短,最少需要2个字符");
+                    return false;
+                }
+                if ( $("#productName").val().length > 30){
+
+                    layer.msg("名称过长,最多可输入30个字符");
+                    return false;
+                }
+            }
+
+           
+
+            if($("#productPrice").val() == null || $("#productPrice").val() == ""){
+                layer.msg("未填写价格");
+                return false;
+            }
+            
+            if($("#productIntroduce").val() == null || $("#productIntroduce").val().trim().length == 0 ){
+                layer.msg("未填写介绍");
+                return false;
+            }
+
+            $.ajax({
+                type: "post",
+                url: serverURL+"/eh/issuedProduct",
+                data: $('#myform').serialize()
+                +'&token='+localStorage.getItem("eh_token")
+                +'&productTypeCode='+productType
+                +'&imgUrlList='+imgUrlList
+                +'&schoolCode='+$("#schoolCode").val()
+                +'&buyTimeCode='+$("#date").val()
+                +'&expireCode='+$("#dateExpires").val(),
+                dataType:"json",
+                traditional: true,//传统的方式来序列化数据 (不对数据进行任何修改)
+                success: function(data){
+                    if(data.errorCode=="501" ) {
+                        layer.msg(data.message);
+                        localStorage.removeItem("eh_token");
+                        window.location.href='login.html';
+                    }
+                    if(data.errorCode != "200" || data.errorCode == "500"){
+                        layer.msg(data.message);
+
+                    }
+                    if(data.errorCode=="200") {
+                        layer.msg(data.message);
+                        window.location.href='index.html';
+                    }
+                },
+                
+            });
+            return false;
+        });
+       
+    });
+
+    /**
+     * 加载一级分类内容入列表
+     */
+    function load_1_Rank()
+    {
+        $.ajax({
+            type: "GET",
+            url: serverURL+"/admin/productRank",
+            data:{rank:"1",superId:""},
+            dataType:"json",
+            success: function(data){
+                if(data.errorCode=="500") {
+                    layer.msg(data.message);
+                }
+                if(data.errorCode=="200") {
+                    $("#rank-1").html("");
+                    $("#rank-1").append("<option value=\"\">选择宝贝类别（可以搜索选择哦）</option>");
+                    $.each(data.list, function(index, p) {
+                        $("#rank-1").append("<option value='"+p.id+"'>"+p.productTypeName+"</option>")
+                    })
+                }
+            },
+            
+        });
+    }
+
+
+    /**
+     * 加载二级分类内容入列表
+     */
+    function load_2_Rank(superId)
+    {
+        $.ajax({
+            type: "GET",
+            url: serverURL+"/admin/productRank",
+            data:{rank:"2",superId:superId},
+            dataType:"json",
+            success: function(data){
+                if(data.errorCode=="500") {
+                    layer.msg(data.message);
+                }
+                if(data.errorCode=="200") {
+                    if (data.list.length == 0){
+                        $("#rank-2").parent().css("display","none");
+                        $("#rank-2").html("");
+                        renderForm('rank-2-box');
+                       return false;
+                    }
+                    $("#rank-2").html("");
+                    $("#rank-2").append("<option value=\"\">请选择二级分类</option>");
+                    $.each(data.list, function(index, p) {
+                        $("#rank-2").append("<option value='"+p.id+"'>"+p.productTypeName+"</option>");
+                    });
+                    renderForm('rank-2-box');
+                    $("#rank-2").parent().css("display","block");
+                }
+            },
+           
+        });
+    }
+
+    
+
+    //重新渲染表单
+    function renderForm(renderSelect){
+        layui.use('form', function(){
+            var form = layui.form;//高版本建议把括号去掉，有的低版本，需要加()
+            form.render('select', renderSelect);
+        });
+    }
+
+
+
+    layui.use(['form', 'layedit', 'laydate'], function(){
+        var form = layui.form
+            ,layer = layui.layer
+            ,layedit = layui.layedit
+            ,laydate = layui.laydate;
+
+        //日期
+        laydate.render({
+            elem: '#date'
+        });
+        laydate.render({
+            elem: '#dateExpires'
+        });
+        laydate.render({
+            elem: '#date1'
+        });
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+
+
+
+        //一级分类监听器
+        form.on('select(rank-1)', function(data){
+            if (data.value == "" || data.value == null){
+                $("#rank-2").parent().css("display","none");
+                $("#rank-3").parent().css("display","none");
+                $("#rank-2").html("");
+                $("#rank-3").html("");
+                return false;
+            }
+            $("#rank-3").parent().css("display","none");
+            $("#rank-3").html("");
+            load_2_Rank(data.value);
+
+        });
+
+        //二级分类监听器
+        form.on('select(rank-2)', function(data){
+            if (data.value == "" || data.value == null){
+                $("#rank-3").parent().css("display","none");
+                $("#rank-3").html("");
+                return false;
+            }
+
+            load_3_Rank(data.value);
+        });
+
+
+        //监听保修到期时间复选框
+        form.on('checkbox(notQuite)',function (data) {
+            if (data.elem.checked){
+                $("#dateExpires").attr("disabled",true);
+            }else {
+                $("#dateExpires").removeAttr("disabled");
+            }
+        });
+
+        //监听指定开关
+        form.on('switch(switchTest)', function(data){
+            layer.msg('开关checked：'+ (this.checked ? 'true' : 'false'), {
+                offset: '6px'
+            });
+            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+        });
+
+        //监听提交
+        form.on('submit(demo1)', function(data){
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            })
+            return false;
+        });
+
+
+    });
+
+
+
+</script>
+
+</body>
+</html>
